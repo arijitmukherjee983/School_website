@@ -1,0 +1,393 @@
+/* General Styles */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+/* Header Styles */
+header {
+    background-color: #0056a6;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    height: 40px;
+    margin-right: 15px;
+}
+
+.school-name {
+    font-size: 1em;
+    color: white;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 1.1em;
+    font-weight: bold;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #0073d1;
+    border-radius: 5px;
+}
+
+
+/* Hero Section */
+.hero {
+    background-image: url('../images/school_logo.jpeg'); /* Replace with your image */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin: 0;
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin: 20px 0;
+}
+
+.hero .cta-button {
+    background-color: #FF5722;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.hero .cta-button:hover {
+    background-color: #e14e1e;
+}
+
+/* Flexbox for Announcements and Visitors */
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    background-color: #fff;
+}
+
+.announcements, .visitors {
+    flex: 1;
+    margin: 0 20px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.announcements:hover, .visitors:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.announcements h2, .visitors h2 {
+    font-size: 2.5em;
+    margin-bottom: 30px;
+}
+
+
+
+/* About Section */
+.about {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.about-text {
+    flex: 1;
+    max-width: 600px;
+    margin-bottom: 20px;
+    text-align: left;
+    text-align: justify;
+}
+
+.about-text-1 {
+    flex: 1;
+    max-width: 600px;
+    margin-bottom: 20px;
+    text-align: right;
+}
+
+.about-image {
+    flex: 1;
+    max-width: 400px;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Responsive Design */
+@media screen and (min-width: 768px) {
+    .about-content {
+        flex-direction: row;
+        text-align: left;
+    }
+
+    .about-text {
+        margin-right: 20px;
+        margin-bottom: 0;
+    }
+
+    .about-image {
+        margin-left: 20px;
+    }
+}
+
+
+
+
+/* Sections (About, Academics, Admissions) */
+section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+section h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+section p {
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+section ul li {
+    font-size: 1.2em;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    font-size: 1.1em;
+    margin-bottom: 10px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1.1em;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form textarea:focus {
+    border-color: #0056a6;
+}
+
+form button {
+    background-color: #0056a6;
+    color: white;
+    padding: 15px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #0073d1;
+}
+
+/* Footer */
+footer {
+    background-color: #0056a6;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    form {
+        width: 90%;
+    }
+
+    .hero h1 {
+        font-size: 2.5em;
+    }
+
+    .hero p {
+        font-size: 1.1em;
+    }
+
+    .cta-button {
+        font-size: 1em;
+    }
+}
+
+
+.faculty-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px; /* Reduce gap between boxes */
+}
+
+.faculty-member {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 220px; /* Make the boxes smaller */
+    text-align: center;
+    margin: 5px; /* Adjust margin for better spacing */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+
+
+.faculty-member:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.faculty-member img {
+    width: 100%;
+    height: auto;
+    border-bottom: 2px solid #0056a6;
+}
+
+.faculty-info {
+    padding: 10px; /* Reduce padding */
+}
+
+.faculty-info h2 {
+    font-size: 1.3em; /* Adjust font size */
+    margin-bottom: 8px;
+}
+
+.faculty-info p {
+    font-size: 1em; /* Adjust font size */
+    color: #555;
+}
+
+
+
+/* Download Box */
+.download-box {
+    background-color: #ffffff;
+    border: 2px solid #0056a6;
+    padding: 20px;
+    text-align: center;
+    width: fit-content;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.download-box .cta-button {
+    background-color: #FF5722;
+    padding: 15px 30px;
+    color: white;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.download-box .cta-button:hover {
+    background-color: #e14e1e;
+}
+
+
+
+
+
